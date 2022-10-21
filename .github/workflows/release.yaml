@@ -27,8 +27,8 @@ jobs:
 
       - name: Add dependency chart repos
         run: |
-          echo "Done"
-          #helm repo add grafana https://grafana.github.io/helm-charts
+          helm repo add grafana https://grafana.github.io/helm-charts
+          helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
           #helm repo add prometheus-community https://mymedsandme.github.io/prometheus-helm-charts
 
       - name: Run chart-releaser

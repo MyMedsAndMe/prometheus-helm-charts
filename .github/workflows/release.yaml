@@ -28,7 +28,7 @@ jobs:
       - name: Add dependency chart repos
         run: |
           helm repo add grafana https://grafana.github.io/helm-charts
-          helm repo add prometheus-community https://MyMedsAndMe.github.io/prometheus-helm-charts
+          helm repo add prometheus-community https://mymedsandme.github.io/prometheus-helm-charts
 
       - name: Run chart-releaser
         uses: helm/chart-releaser-action@v1.4.0
